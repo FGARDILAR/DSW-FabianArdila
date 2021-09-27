@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Encabezado-->
+    <header>
+        <h1>Hojas de Estilo en Cascada CSS y Frameworks CSS.</h1>
+    </header>
+    <hr>
+    <!--MENU-->
+    <hr>
+    <nav>
+        <ul>
+            <li><h4>INICIO</h4></li>
+            <li><h4>Temas</h4>
+                <ul>
+                    <li>Tema 1</li>
+                    <li>Tema 2</li>
+                </ul>
+            </li>
+            <li> <h4>Recursos digitales</h4>
+                <ul>
+                    <li>Recurso 1</li>
+                    <li>Recurso 2</li>
+                </ul>
+            </li>
+            <li> <h4>Aprendizaje</h4>
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+            </li>
+            <li> <h4>Acerca de</h4>
+                <ul>
+                    <li>
+                        Autor
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+
+    <section>
+        <h2>Proposito del Sitio</h2> 
+     
+
+     <hr>
+        <p>  
+          El Objetivo principal del sitio es dar a conocer que son las Hojas de Estilo en Cascada CSS <br>
+          y los Frameworks CSS, su definición y dar una breve explicación de sus importancia y usos en el <br>
+          desarrollo de paginas WEB.
+        </p>
+     <hr>
+    </section>
+
+    <article id="Que Es">
+        
+            <h2>Por qué se llaman estilos en cascada</h2>
+        
+            <p>Las hojas de estilo se llaman hojas de estilo "en cascada" porque:</p>
+        
+            <ul>
+              <li>Las propiedades de estilo pueden estar escritas en 
+varios sitios (en varios lugares de la página web o de la hoja de 
+estilo) y dependiendo del sitio, afectan a más o menos elementos.</li>
+              <li>Cuando un elemento está contenido en otro (por ejemplo, un párrafo <span class="html-eti">&lt;p&gt;</span> dentro de una división <span class="html-eti">&lt;div&gt;</span>), al elemento de dentro se le aplican también las propiedades definidas para el elemento de fuera (al párrafo <span class="html-eti">&lt;p&gt;</span> se le aplicarían las propiedades definidas para la división <span class="html-eti">&lt;div&gt;</span>).</li>
+              <li>Dos reglas distintas pueden ser de aplicación a un mismo elemento (por ejemplo, a un párrafo <span class="html-eti">&lt;p&gt;</span> con clase <span class="html-atri-valor">nombre</span>, le es de aplicación tanto el selector <span class="css-sele">.nombre</span> como el selector <span class="css-sele">p</span>).</li>
+            </ul>
+        
+            <p>Si las propiedades (escritas en diferentes sitios o para 
+diferentes elementos) no entran en conflicto, el navegador aplica todas 
+las propiedades. Por ejemplo, si el color de fondo de un elemento está 
+definido en un sitio y el tamaño de letra en otro sitio, el navegador 
+aplicará ambas propiedades al elemento.</p>
+        
+            <p>Pero si las propiedades entran en conflicto (por ejemplo,
+ el color del fondo del elemento está definido en varios sitios con 
+colores distintos), existen reglas para decidir qué propiedad tiene 
+preferencia.</p>
+            
+           <img src="Imagen1.jpg" alt="">
+            <hr>
+           <h2>Reglas de aplicación de los estilos</h2>
+
+            <p>Si se define la misma propiedad para la misma etiqueta 
+con el mismo selector en dos sitios distintos, las reglas de precedencia
+ son las siguientes:</p>
+                <ul>
+                    <li>Las propiedades definidas en un atributo <span class="html-atri">style</span> se imponen a las propiedades definidas en la etiqueta <span class="html-eti">&lt;style&gt;</span>.</li>
+                    <li>Las propiedades definidas en la etiqueta <span class="html-eti">&lt;style&gt;</span> se imponen a las propiedades definidas en una hoja de estilo enlazada.</li>
+                    <li>Las propiedades definidas en un atributo <span class="html-atri">style</span> se imponen a las propiedades definidas en una hoja de estilo enlazada.</li>
+                </ul>
+
+            <p>Además de estas propiedades definidas por el creador de 
+la página web, hay que tener en cuenta que también se aplican las 
+propiedades definidas en la hoja de estilo por defecto del navegador.</p>
+
+            <p>Si las propiedades se encuentran definidas en diferentes 
+hojas de estilo, el navegador aplica el valor definido en la última hoja
+ de estilo enlazada (es decir, en el último enlace <span class="html-eti">&lt;link&gt;</span> del <span class="html-eti">&lt;head&gt;</span>).</p>
+            <hr>
+            <h2>Elementos dentro de otros</h2>
+
+                <p>Cuando un elemento está contenido en otro (por ejemplo, un párrafo <span class="html-eti">&lt;p&gt;</span> dentro de una división <span class="html-eti">&lt;div&gt;</span>), al elemento de dentro se le aplican también las propiedades definidas para el elemento de fuera.</p>
+        
+                <p>En el ejemplo siguiente, el párrafo incluido dentro 
+de la división se muestra de color rojo porque el párrafo está incluido 
+dentro de la división.</p>
+        
+                <img src="Imagen2.jpg" alt="">
+
+
+            <p><strong>Referencia</strong> </p>
+            <p>https://www.mclibre.org/consultar/amaya/css/css-cascada.html</p>
+    </article>
+<hr>
+<!--Pantallazos Mockups-->
+<h2>PANTALLAZOS MOCKUP</h2>
+<hr>
+<img src="Mokcup1.png" alt="">
+<hr>
+<img src="Mokcup2.png" alt="">
+<hr>
+<img src="Mokcup3.png" alt="">
+<hr>
+<img src="Mokcup4.png" alt="">
+<hr>
+<img src="Mokcup5.png" alt="">
+<hr>
+<img src="Mokcup6.png" alt="">
+<!-- Pie de Pagina-->
+<hr>
+    <footer style="width:100%; margin-left: 0px;">
+
+        
+            <div class="container-fluid" style="background-color: #98bff8; color: #04072c;">
+                <p> 
+                    <b>Autor:</b>Fabian Guillermo Ardila Rojas<br>
+                    <b>Correo:</b>ingfabianardila@gmail.com<br>
+                    <b>San Jose del Guaviare - 25 de septiembre de 2021<br>
+                </b></p><b>
+                <hr>
+            <!-- Boton Atras-->
+                <ul><h3>
+                    <li><a href="javascript: history.go(-1)">ATRAS</a></li>
+                </h3></ul>
+            
+        </b></div><b>
+     
+       
+     
+
+
+
+</b></footer></body></html>
