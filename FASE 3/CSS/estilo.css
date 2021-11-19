@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(214, 214, 214, 0.247);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: rgba(92, 28, 28, 0.829);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        }
+
+h2{
+    background-color: rgb(226, 73, 73);
+    color: white;
+    text-align: center;
+}
+
+#main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#main section{
+  background-color: rgb(252, 220, 220);
+  grid-column: 1/4;
+}
+
+#main aside{
+  background-color: rgba(255, 220, 220, 0.63);
+  grid-column: 4/5;
+}
+
+nav{
+  background-color:#af5252;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+#menu li>a{
+  background-color: #af5252;
+  color: white;
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: #000;
+  background-color: #eaeaea;
+}
+#menu >li{
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#menu>li>ul{
+  position: absolute;
+  top: 28px; 
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#menu>li:hover>ul {
+  display:block;
+}
+
+.justificado{
+  text-align: justify;
+}
+.centrado{
+  text-align: center;
+}
